@@ -1,0 +1,107 @@
+create DATABASE SAMPLEDB
+use sampledb
+
+create table Student(rollno int,
+                    name varchar(100) not null,
+                    subject varchar(100) not null,
+                    crid int                                          
+                    )
+
+drop table testtbl
+
+
+drop database testDB
+
+
+create table testtbl(tid int primary key AUTO_INCREMENT not null, tnm varchar(100))
+
+
+
+ALTER TABLE course ADD PRIMARY KEY(crid);
+
+alter table testtbl add cost bigint;
+
+alter table testtbl modify cost int;
+
+
+_______________________
+alter table testtbl add age int
+
+alter table testtbl drop COLUMN age
+______________________
+
+ALTER TABLE student modify rollno INT AUTO_INCREMENT PRIMARY KEY;
+
+
+alter table course modify crid int AUTO_INCREMENT
+
+___________________
+
+TRUNCATE table testtbl
+
+/* remove all reacords*/
+
+
+alter table testtbl rename to new_test_tbl 
+
+
+/* rename table name */
+select colum=list from table 1 
+From Shamsheera T to Everyone 05:14 PM
+select s.rollno,s.name,c.crnm from new_student s left join course c on c.crid=s.crid union select s.rollno,s.name,c.crnm from new_student s right join course c on c.crid=s.crid;
+Relationship in Department and Empl tables(Primary - Foreign Key based)
+It support one to many  and the cascading operations as well
+
+
+
+create table department(dept_id int primary key AUTO_INCREMENT not null, deptnm varchar(100))
+
+
+create table EMPTBL(empid int primary key AUTO_INCREMENT not null, empnm varchar(100),dept_id int ,foreign key(dept_id) REFERENCES department(dept_id))
+CREATE TABLE Products(  
+    ID INT,  
+    Product_Name VARCHAR(65),  
+    Price DECIMAL(9,2) )
+INSERT INTO Products(ID, Product_Name, Price) VALUES   
+(1, 'Table', 150), (2, 'Desk', 100),  
+(3, 'Chair', 75), (4, 'Computer', 225);
+SELECT * FROM Products  ,TargetProducts
+join:
+created table 1
+CREATE TABLE Student (      
+  id int PRIMARY KEY ,     
+  admission_no varchar(45) NOT NULL,  
+  first_name varchar(45) NOT NULL,      
+  last_name varchar(45) NOT NULL,  
+  age int,  
+  city varchar(25) NOT NULL      
+);
+From Shamsheera T to Everyone 05:14 PM
+CREATE TABLE Fee (   
+  admission_no varchar(45) NOT NULL,  
+  course varchar(45) NOT NULL,      
+  amount_paid int);
+SELECT Student.admission_no, Student.first_name, Student.last_name, Fee.course, Fee.amount_paid  
+FROM Student  
+INNER JOIN Fee  
+ON Student.admission_no = Fee.admission_no;
+SELECT S1.first_name, S2.last_name, S2.city  
+FROM Student S1, Student S2  
+WHERE S1.id <> S2.iD AND S1.city = S2.city  
+ORDER BY S2.city;
+SELECT column_lists  
+FROM table1    
+LEFT [OUTER] JOIN table2    
+ON table1.column = table2.colum
+SELECT Student.admission_no, Student.first_name, Student.last_name, Fee.course, Fee.amount_paid  
+FROM Student  
+LEFT OUTER JOIN Fee  
+ON Student.admission_no = Fee.admission_no;
+SELECT Student.admission_no, Student.first_name, Student.last_name, Fee.course, Fee.amount_paid  
+FROM Student  
+RIGHT OUTER JOIN Fee  
+ON Student.admission_no = 
+SELECT S.NAME,S.AGE,S.CITY FROM STUDENT S LEFT JOIN FEE F ON F.ADMISSION_NO=S.ADMISSION_NO UNION SELECT S.NAME,F.COURSE,F.AMOUNT_PAID FROM STUDENT S RIGHT JOIN FEE F ON F.ADMISSION_NO=S.ADMISSION_NO;
+
+
+

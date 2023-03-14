@@ -1,0 +1,50 @@
+<html>
+<head>
+
+<title> Contact Us </title>
+
+</head>
+
+<body bgcolor="lightgreen">
+	
+	</br>
+	</br>
+	</br>
+	</br>
+<center>
+		<H1> CheckBox Buttons </h1>
+</center>
+
+<!-- Inline CSS -->
+<div style="border:blue solid 2px;margin-left:15%;margin-top:5%;margin-right:20%;padding-left:10%;">
+<p>
+<table>
+		<form>
+				<tr>
+				<td><label for="ml"> Education : </label></td>
+				
+				<td><input type="checkbox" id="edu1" name="edu1" value="10+2" />10+2</td>				
+				<td><input type="checkbox" id="edu2" name="edu2"  value="ungrad" />UnderGraduate</td>
+				<td><input type="checkbox" id="edu3" name="edu3" value="grd" />Graduate</td>				
+				<td><input type="checkbox" id="edu4" name="edu4"  value="postgrad" />PostGraduate</td></tr>
+					
+					
+				<tr><td>Email : <input type="email" id="em" name="em" required autofocus/></td></tr>
+				<tr><td>DOB : <input type="date" id="db" name="em" max="2020-12-31" required/></td></tr>
+				
+				<tr><td>Time : <input type="time" id="tm" name="em" required/></td></tr>
+				<tr><td>Password : <input type="password" id="pwd" name="pwd" required/></td></tr>
+				<tr><td>Uploading : <input type="file" id="file" name="file" required multiple/></td></tr>
+				
+				
+											
+				<tr><td></td><td><input type="submit" value="SUBMIT"/></td></tr>
+					
+		</form>
+</table>
+</p>
+
+</div>
+
+</body>
+</html>

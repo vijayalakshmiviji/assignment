@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+#a{
+color:green
+}
+#b{
+color:white
+}
+.d{
+color:black
+}
+
+</style>
+</head>
+<body style="background-image:url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);">
+	<h1> DIV TAG ALONG WITH CSS</h1>
+	<br>
+	<br>
+	
+	<!-- Inline CSS-->
+	
+	<div style="background-color:yellow;color:red;border:5px solid blue;padding:10px;margin-left:25%;margin-right:25%;">
+	
+		<p id="a">this is a test document</p>	
+		<p id="b">this is a test document</p>
+		<p id="c">this is a test document</p>
+		<p class="d">this is a test document</p>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="external.css">
+</head>
+
+<body>
+<h1 style="text-align:center;">
+Login </h1>
+
+ <div class="div1">
+	<form class="frm1"  method="post">
+ 
+  
+  <label> Email : </label>
+	<input type="email" name="mail" id="mail" placeholder= "Enter your Email ID" size="25" required /></br>
+
+
+	<label> Password : </label>
+	<input type="password" name="pwd" id="pwd" placeholder="Password" size="25" required onblur="checkpwd()"/></br>
+	<script type="text/javascript">
+	function checkpwd()
+	{
+	var n1=document.getElementById("pwd").value;
+	var i;
+	i=n1.length;
+	if(i>=10)
+	{
+	alert("password should be <=10 character!");
+	document.getElementById("pwd").value="";
+	document.getElementById("mail").value="";
+	}
+	}
+	</script>
+
+</br>
+	
+	</br>
+
+    <input type="submit" class="registerbtn" value="Submit" />
+	
+</form>	
+  </div>
+
+</body>
+</html>

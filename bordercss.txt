@@ -1,0 +1,40 @@
+<!-- border style -->
+
+<html>
+<head>
+
+<style>
+
+	p.dotted{  border-style:dotted;	}
+	p.dashed{  border-style:dashed;	}
+	p.solid{  border-style:solid; border-width:thick; border-color:red; border-radius:15px;	}
+	p.double{  border-style:double;	}
+	p.groove{  border-style:groove;	}
+	p.ridge{  border-style:ridge;	}
+	p.inset{  border-style:inset;	}
+	p.outset{  border-style:outset; border-width:5px;	}
+	p.none{  border-style:none;	}
+	p.mix{  border-style:dotted dashed solid double;	}
+
+
+</style>
+
+</head>
+<body>
+
+<h1> Border style </h1>
+
+<p class = "dotted"> A dotted border </p>
+<p class = "dashed"> A dashed border </p>
+<p class = "solid"> A solid border </p>
+<p class = "double"> A double border </p>
+<p class = "groove"> A groove border </p>
+<p class = "ridge"> A ridge border </p>
+<p class = "inset"> A inset border </p>
+<p class = "outset"> A outset border </p>
+<p class = "none"> A none border </p>
+<p class = "mix"> A mix border </p>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<STYLE>
+body{background-color:pink;}
+</STYLE>
+<SCRIPT>
+ function validate()
+ { 
+ if(document.f1.check1.checked==false)
+ {
+ alert("please select the checkbox");
+ return false;
+ }
+ else
+ {
+ alert("one option is selected");
+ return true;
+ }
+ }
+ </SCRIPT>
+ </HEAD>
+ <BODY>
+ <FORM Name="f1" method="get"action="thanks.html"onsubmit="return validate();">
+ <INPUT type="checkbox" ID="check1"/>
+ Do you want to accept?
+ <INPUT type="submit"name="submit"value="sumbit"/>
+ <INPUT type="reset"name="reset"value="Reset"/></FORM>
+ </BODY>
+ </HTML>
