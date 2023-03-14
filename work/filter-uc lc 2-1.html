@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="personCtrl">
+
+<p>The name is {{ lastName | uppercase }}</p>
+<p>The name is {{ firstName | lowercase }}</p>
+<p>The price is {{ price  | currency }}</p>
+<p>date {{ date | date }}</p>
+<p>number {{ number | number }}</p>
+
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('personCtrl', function($scope) {
+    $scope.firstName = "Viji",
+    $scope.lastName = "Vaishali",
+	$scope.price =55,
+	$scope.date=2/5/20,
+	$scope.number=123
+});
+</script>
+
+</body>
+</html>
